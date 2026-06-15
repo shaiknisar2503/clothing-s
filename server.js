@@ -5,7 +5,9 @@ console.log("KEY:", process.env.RAZORPAY_KEY_ID);
 const app = require("./src/app");
 const connectDB = require("./src/config/db");
 
-
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
 
 const PORT =
 process.env.PORT || 5000;
