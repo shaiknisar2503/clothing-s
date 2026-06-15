@@ -2,7 +2,7 @@ require("dotenv").config();
 
 console.log("KEY:", process.env.RAZORPAY_KEY_ID);
 
-const app = require("./src/app");
+const app = require("./src/App");
 const connectDB = require("./src/config/db");
 
 app.get("/", (req, res) => {
