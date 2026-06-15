@@ -6,6 +6,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const productRoutes = require("./routes/productRoutes");
 const morgan = require("morgan");
+const paymentRoutes = require("./routes/paymentRoutes");
 
 
 
@@ -29,5 +30,5 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/products", productRoutes);
-
+app.use("/api/payment", paymentRoutes);
 module.exports = app;

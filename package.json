@@ -25,6 +25,7 @@
     "nodemailer": "^8.0.10",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
+    "postgres": "^3.4.9",
     "razorpay": "^2.9.6",
     "recharts": "^3.8.1",
     "slugify": "^1.6.9",

@@ -1,14 +1,6 @@
-const mongoose = require("mongoose");
+import postgres from 'postgres'
 
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGO_URI);
+const connectionString = process.env.DATABASE_URL
+const sql = postgres(connectionString)
 
-    console.log("MongoDB Connected");
-  } catch (error) {
-    console.log(error);
-    process.exit(1);
-  }
-};
-
-module.exports = connectDB;
+export default sql
